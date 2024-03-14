@@ -38,7 +38,7 @@ img {
     font-size: 4rem;
     text-align: center;
     font-weight: 900;
-    color: var( --primary );
+    color: #e99401;
     margin: 5rem 0;
 }
 
@@ -51,12 +51,12 @@ img {
 }
 
 
-.header__guitarra {
+.header__guitar {
     display: none;
 }
 
 @media (min-width: 992px) {
-    .header__guitarra {
+    .header__guitar {
         display: block;
         position: absolute;
         right: 0;
@@ -147,7 +147,7 @@ img {
     }
 }
 
-.model__nombre {
+.model__title {
     font-size: 8rem;
 }
 
@@ -158,7 +158,7 @@ img {
     line-height: 0;
 }
 
-.model__enlace {
+.model__link {
     margin-top: 2rem;
     text-decoration: none;
     padding: 1rem 5rem;
@@ -171,7 +171,7 @@ img {
     transition-duration: 300ms;
 }
 
-.model__enlace:hover {
+.model__link:hover {
     background-color: var( --primary );
 }
 
@@ -352,28 +352,28 @@ img {
     }
 }
 
-.entrada {
+.post {
     max-width: 80rem;
     margin: 0 auto;
 }
 
-.entrada__content {
+.post__content {
     padding: 2rem;
 }
 
-.entrada__titulo {
+.post__title {
     font-weight: 400;
     font-size: 2.8rem;
     margin: 0;
     line-height: 1.2;
 }
 
-.entrada__fecha {
+.post__data {
     font-size: 1.6rem;
     color: var(--primary);
 }
 
-.entrada__enlace {
+.post__link {
     margin-top: 2rem;
     display: block;
     text-decoration: none;
@@ -388,12 +388,12 @@ img {
     transition-duration: 300ms;
 }
 
-.entrada__enlace:hover {
+.post__link:hover {
     background-color: var(--primary);
     color: var(--blanco);
 }
 
-.entrada__texto {
+.post__text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
@@ -428,7 +428,7 @@ img {
 }
 
 .footer__link {
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: var(--blanco);
     text-decoration: none;
     font-weight: 700;
@@ -439,7 +439,7 @@ img {
 }
 
 .footer__copyright {
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: var(--blanco);
     font-weight: 700;
     text-align: center;

@@ -1,305 +1,397 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Устанавливаем кодировку для поддержки русского и других языков -->
+    <meta charset="UTF-8" />
+    <!-- Обеспечиваем совместимость с последними версиями браузеров -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Оптимизация отображения на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Мета-описание для поисковых систем -->
+    <meta name="description" content="Описание вашей страницы" />
+    <!-- Ключевые слова для SEO -->
+    <meta name="keywords" content="ключевые, слова" />
+    <!-- Заголовок страницы -->
     <title>Музыкальный магазин</title>
-    <link rel="icon" href="linux.png" type="image/png" media="screen" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-</head>
+    <!-- Иконка сайта -->
+    <link rel="icon" href="linux.png" type="image/png" />
+    <!-- Сброс стилей для обеспечения единообразия в различных браузерах -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Предзагрузка шрифтов для ускорения отображения текста -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Подключение шрифтов -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 
-<body>
+    <!-- Основной стилевой файл -->
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
     <header class="header">
-        <div class="header__container">
+      <div class="header__container">
+        <!-- Логотип и навигация -->
+        <div class="header__nav">
+          <a href="#">
+            <img class="header__logo" alt="Логотип" src="img/logo.svg" />
+          </a>
 
-            <div class="header__nav">
-                <a href="#">
-                    <img class="header__logo" alt="image logo" src="img/logo.svg" />
-                </a>
-
-                <nav class="nav">
-                    <a class="nav__link" href="index.html">Главная</a>
-                    <a class="nav__link" href="about.html">О нас</a>
-                    <a class="nav__link" href="blog.html">Блог</a>
-                    <a class="nav__link" href="shop.html">Товары</a>
-                </nav>
-            </div>
-
-            <div class="model">
-                <h1 class="model__nombre">Модель 1</h1>
-                <p class="model__description">
-                    Принимая во внимание показатели успешности, убеждённость некоторых оппонентов влечет за собой процесс внедрения и модернизации своевременного выполнения сверхзадачи.
-                </p>
-                <p class="model__price"> ₽4990 </p>
-                <a class="model__enlace" href="product.html">Купить</a>
-            </div>
-
+          <nav class="nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="about.html">О нас</a>
+            <a class="nav__link" href="blog.html">Блог</a>
+            <a class="nav__link" href="shop.html">Товары</a>
+          </nav>
         </div>
 
-        <img class="header__guitarra" alt="image header guitarra" src="img/header_guitarra.png" />
+        <!-- Витрина товара или промо-блок -->
+        <div class="model">
+          <h1 class="model__title">Модель 1</h1>
+          <p class="model__description">
+            Принимая во внимание показатели успешности, убеждённость некоторых
+            оппонентов влечет за собой процесс внедрения и модернизации
+            своевременного выполнения сверхзадачи.
+          </p>
+          <p class="model__price">₽4990</p>
+          <a class="model__link" href="product.html">Купить</a>
+        </div>
+      </div>
+
+      <!-- Декоративное изображение -->
+      <img class="header__guitar" alt="Гитара" src="img/header_guitar.png" />
     </header>
-
+    <!-- Основное содержимое страницы -->
     <main class="products products__container">
-        <h2 class="products__heading">Наши иструменты</h2>
+      <h2 class="products__heading">Наши иструменты</h2>
+      <!-- Список товаров. Для каждого товара указывается изображение, название, описание, цена и ссылка для покупки. Повторяется для каждого продукта. -->
+      <div class="products__grid">
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_01.jpg"
+          />
 
-        <div class="products__grid">
+          <div class="product__content">
+            <h3 class="product__nombre">Lukather</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_01.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_02.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Lukather</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">SRV</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_02.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_03.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">SRV</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Borland</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_03.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_04.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Borland</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">VAI</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_04.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_05.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">VAI</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Thompson</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_05.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_06.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Thompson</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">White</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_06.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_07.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">White</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Cobain</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_07.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_08.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Cobain</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Dale</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_08.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_09.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Dale</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Krieger</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_09.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_10.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Krieger</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Campbell</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_10.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_11.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Campbell</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
+          <div class="product__content">
+            <h3 class="product__nombre">Reed</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
 
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_11.jpg" />
+        <div class="product">
+          <img
+            class="product__image"
+            alt="image guitar"
+            src="img/guitar_12.jpg"
+          />
 
-                <div class="product__content">
-                    <h3 class="product__nombre">Reed</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
-
-            <div class="product">
-                <img class="product__image" alt="image guitarra" src="img/guitarra_12.jpg" />
-
-                <div class="product__content">
-                    <h3 class="product__nombre">Lukather</h3>
-                    <p class="product__description">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    </p>
-                    <p class="product__price"> ₽3990 </p>
-                    <a class="product__enlace" href="product.html">Купить</a>
-                </div>
-            </div> <!-- .product -->
-
-        </div> <!-- .product__grid -->
-
+          <div class="product__content">
+            <h3 class="product__nombre">Lukather</h3>
+            <p class="product__description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне.
+            </p>
+            <p class="product__price">₽3990</p>
+            <a class="product__enlace" href="product.html">Купить</a>
+          </div>
+        </div>
+        <!-- .product -->
+      </div>
+      <!-- .product__grid -->
     </main>
 
     <section class="courses">
-        <div class="courses__container courses__grid">
-            <div class="courses__content">
-                <div class="courses__heading">
-                    Aprende a tocar guitarra
-                </div>
-                <p class="courses__texto">
-                    Vulputate enim nulla aliquet porttitor lacus, luctus accumsan tortor posuere ac ut consequat semper
-                    viverra! Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque
-                    elit ullamcorper dignissim?
-                </p>
-                <a class="courses__enlace" href="#">Mas informacion</a>
-            </div>
+      <div class="courses__container courses__grid">
+        <div class="courses__content">
+          <div class="courses__heading">Научитесь играть на гитаре</div>
+          <p class="courses__texto">
+            Здесь ваш текст.." Многие программы электронной вёрстки и редакторы
+            HTML используют Lorem Ipsum в качестве текста по умолчанию, так что
+            поиск по ключевым словам "lorem ipsum" сразу показывает, как много
+            веб-страниц всё ещё дожидаются своего настоящего рождения.
+          </p>
+          <a class="courses__enlace" href="#">Записаться на курс</a>
         </div>
+      </div>
     </section>
 
     <section class="blog">
-        <h2 class="blog__heading">Музыкальный Блог</h2>
-        <section class="blog__container blog__grid">
+      <h2 class="blog__heading">Музыкальный Блог</h2>
+      <section class="blog__container blog__grid">
+        <article class="post">
+          <img class="post__image" alt="image blog" src="img/blog_1.jpg" />
 
-            <article class="entrada">
-                <img class="entrada__image" alt="image blog" src="img/blog_1.jpg" />
+          <div class="post__content">
+            <h3 class="post__title">Статья блога</h3>
+            <p class="post__data">01.03.2024</p>
+            <p class="post__text">
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+              начала XVI века. В то время некий безымянный печатник создал
+              большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+              для распечатки образцов
+            </p>
+            <a class="post__link" href="single_blog.html">Подробнее...</a>
+          </div>
+        </article>
 
-                <div class="entrada__content">
-                    <h3 class="entrada__titulo">Статья блога</h3>
-                    <p class="entrada__fecha"> 01.03.2024 </p>
-                    <p class="entrada__texto">
-                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов
-                    </p>
-                    <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
-                </div>
-            </article>
+        <article class="post">
+          <img class="post__image" alt="image blog" src="img/blog_2.jpg" />
 
-            <article class="entrada">
-                <img class="entrada__image" alt="image blog" src="img/blog_2.jpg" />
+          <div class="post__content">
+            <h3 class="post__title">Статья блога</h3>
+            <p class="post__data">01.03.2024</p>
+            <p class="post__text">
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+              начала XVI века. В то время некий безымянный печатник создал
+              большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+              для распечатки образцов
+            </p>
+            <a class="post__link" href="single_blog.html">Подробнее...</a>
+          </div>
+        </article>
 
-                <div class="entrada__content">
-                    <h3 class="entrada__titulo">Статья блога</h3>
-                    <p class="entrada__fecha"> 01.03.2024 </p>
-                    <p class="entrada__texto">
-                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов
-                    </p>
-                    <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
-                </div>
-            </article>
+        <article class="post">
+          <img class="post__image" alt="image blog" src="img/blog_3.jpg" />
 
-            <article class="entrada">
-                <img class="entrada__image" alt="image blog" src="img/blog_3.jpg" />
+          <div class="post__content">
+            <h3 class="post__title">Статья блога</h3>
+            <p class="post__data">01.03.2024</p>
+            <p class="post__text">
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+              начала XVI века. В то время некий безымянный печатник создал
+              большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+              для распечатки образцов
+            </p>
+            <a class="post__link" href="single_blog.html">Подробнее...</a>
+          </div>
+        </article>
 
-                <div class="entrada__content">
-                    <h3 class="entrada__titulo">Статья блога</h3>
-                    <p class="entrada__fecha"> 01.03.2024 </p>
-                    <p class="entrada__texto">
-                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов
-                    </p>
-                    <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
-                </div>
-            </article>
+        <article class="post">
+          <img class="post__image" alt="image blog" src="img/blog_4.jpg" />
 
-            <article class="entrada">
-                <img class="entrada__image" alt="image blog" src="img/blog_4.jpg" />
-
-                <div class="entrada__content">
-                    <h3 class="entrada__titulo">Статья блога</h3>
-                    <p class="entrada__fecha"> 01.03.2024 </p>
-                    <p class="entrada__texto">
-                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов
-                    </p>
-                    <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
-                </div>
-            </article>
-
-        </section>
+          <div class="post__content">
+            <h3 class="post__title">Статья блога</h3>
+            <p class="post__data">01.03.2024</p>
+            <p class="post__text">
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+              начала XVI века. В то время некий безымянный печатник создал
+              большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+              для распечатки образцов
+            </p>
+            <a class="post__link" href="single_blog.html">Подробнее...</a>
+          </div>
+        </article>
+      </section>
     </section>
 
+    <!-- Подвал сайта -->
     <footer class="footer">
-        <div class="footer__container footer__content">
-            <nav class="footer__nav">
-                <a class="footer__link" href="index.html">Главная</a>
-                <a class="footer__link" href="about.html">О нас</a>
-                <a class="footer__link" href="blog.html">Блог</a>
-                <a class="footer__link" href="shop.html">Товары</a>
-            </nav>
-
-            <p class="footer__copyright">
-                &copy; 2024 Иванов Иван
-            </p>
-        </div>
+      <div class="footer__container footer__content">
+        <nav class="footer__nav">
+          <a class="footer__link" href="index.html">Главная</a>
+          <a class="footer__link" href="about.html">О нас</a>
+          <a class="footer__link" href="blog.html">Блог</a>
+          <a class="footer__link" href="shop.html">Товары</a>
+        </nav>
+        <!-- Копирайт -->
+        <p class="footer__copyright">&copy; 2024 Айат Кыныев</p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
