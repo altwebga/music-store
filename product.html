@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный магазин: Nombre Pagina</title>
+    <link rel="icon" href="linux.png" type="image/png" media="screen" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <div class="header__nav">
+                <a href="#">
+                    <img class="header__logo" alt="image logo" src="img/logo.svg" />
+                </a>
+
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="about.html">О нас</a>
+                    <a class="nav__link" href="blog.html">Блог</a>
+                    <a class="nav__link" href="shop.html">Товары</a>
+                </nav>
+            </div> <!-- .header-barra -->
+
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="product">
+            <img class="product__image" alt="image guitarra" src="img/guitarra_12.jpg" />
+
+            <div class="product__content">
+                <h3 class="product__nombre">Lukather</h3>
+                <p class="product__description">
+                    Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.
+                </p>
+                <p class="product__price"> ₽3990 </p>
+
+                <form class="product__formulario" method="" action="">
+                    <label class="product__label" for="">Вариант:</label>
+                    <select class="product__cantidad" id="" name="">
+                        <option value="">-- Выбрать --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <input class="product__agregar-carrito" type="submit" name="" value="Заказать" />
+                </form>
+            </div>
+        </div> <!-- .product -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container footer__content">
+            <nav class="footer__nav">
+                <a class="footer__link" href="index.html">Главная</a>
+                <a class="footer__link" href="about.html">О нас</a>
+                <a class="footer__link" href="blog.html">Блог</a>
+                <a class="footer__link" href="shop.html">Товары</a>
+            </nav>
+
+            <p class="footer__copyright">
+                &copy; 2024 Иванов Иван
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
