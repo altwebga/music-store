@@ -14,6 +14,7 @@ html {
     box-sizing: inherit;
 }
 
+
 body {
     font-size: 2rem;
     font-family: var(--fuente-principal);
@@ -455,4 +456,41 @@ img {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
+}
+
+.auth__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.auth__input {
+    min-width: 320px;
+    border: 2px solid var(--primary);
+    padding: 10px 15px;
+}
+
+.auth__button {
+    min-width: 320px;
+    margin-top: 2rem;
+    /* display: block; */
+    /* text-decoration: none; */
+    /* color: var(--negro); */
+    padding: 10px 15px;
+    border: 2px solid var(--primary);
+    /* text-align: center; */
+    /* font-size: 1.2rem; */
+    /* font-weight: 900; */
+    text-transform: uppercase;
+    background: #fff;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.auth__button:hover {
+    background-color: var(--primary);
+    color: var(--blanco);
 }
