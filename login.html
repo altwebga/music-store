@@ -61,6 +61,14 @@
           Войти
         </button>
       </form>
+
+      <script>
+        document.querySelector('.auth__form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Предотвращаем стандартное поведение формы
+          alert('Обработчик формы не настроен.'); // Показываем всплывающее окно
+        });
+      </script>
+
       <p class="auth__text">
         Нет акаунта?
         <a class="auth__text_link" href="/register.html">Зарегистрируйтесь</a>

@@ -68,6 +68,16 @@
           Зарегистрироваться
         </button>
       </form>
+
+      <script>
+        document
+          .querySelector(".auth__form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение формы
+            alert("Обработчик формы не настроен."); // Показываем всплывающее окно
+          });
+      </script>
+
       <p class="auth__text">
         Уже зарегистрированы?
         <a class="auth__text_link" href="/login.html">Войти</a>
