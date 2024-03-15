@@ -42,20 +42,47 @@
 
     <main class="container">
       <h2 class="heading">Личный кабинет</h2>
-      <div class="profile">
-        <div class="profile__image">
-          <img src="img/profile-pic.jpg" alt="Профиль">
+      <div class="content">
+        <div class="column profile">
+          <div class="profile__image">
+            <img src="img/profile-pic.jpg" alt="Профиль" />
+          </div>
+          <div class="profile__info">
+            <h3 class="profile__name">
+              Айат Кыныев <span class="edit-icon">&#9998;</span>
+            </h3>
+            <p class="profile__detail">Дата рождения: xx.xx.xxxx</p>
+            <p class="profile__detail">Дата регистрации: 01.01.2020</p>
+            <p class="profile__detail">Сумма покупок: 150,000 руб.</p>
+            <p class="profile__detail">Email: ivanov@example.com</p>
+            <p class="profile__detail">Телефон: +7 (900) 123-45-67</p>
+          </div>
         </div>
-        <div class="profile__info">
-          <h3 class="profile__name">Айат Кыныев</h3>
-          <p class="profile__detail">Дата рождения: xx.xx.xxxx</p>
-          <p class="profile__detail">Дата регистрации: 01.01.2020</p>
-          <p class="profile__detail">Сумма покупок: 150,000 руб.</p>
-          <p class="profile__detail">Email: ivanov@example.com</p>
-          <p class="profile__detail">Телефон: +7 (900) 123-45-67</p>
+        <div class="column order-history">
+          <h3 class="order-history__title">История заказов</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Товар</th>
+                  <th>Количество</th>
+                  <th>Сумма</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01.01.2024</td>
+                  <td>Гитара Fender Stratocaster</td>
+                  <td>1</td>
+                  <td>30,000 руб.</td>
+                </tr>
+                <!-- Добавьте другие заказы аналогичным образом -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      
     </main>
 
     <footer class="footer">
