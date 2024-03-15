@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание вашей страницы" />
+    <meta name="keywords" content="ключевые, слова" />
+    <title>Музыкальный магазин: Корзина</title>
+    <link rel="icon" href="linux.png" type="image/png" media="screen" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__nav">
+          <a href="/index.html">
+            <img class="header__logo" alt="image logo" src="img/logo.svg" />
+          </a>
+
+          <nav class="nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="about.html">О нас</a>
+            <a class="nav__link" href="blog.html">Блог</a>
+            <a class="nav__link" href="shop.html">Товары</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2 class="heading">Корзина</h2>
+      <div class="cart">
+        <ul class="cart__items">
+          <li class="cart__item">
+            <span class="item__name"
+              >Гитара электроакустическая Yamaha F310</span
+            >
+            <div class="item__info">
+              <span class="item__quantity">
+                <button onclick="changeQuantity('item1', -1)">-</button>
+                <span id="item1-quantity">1</span>
+                <button onclick="changeQuantity('item1', 1)">+</button>
+              </span>
+              <span class="item__price">4990 руб.</span>
+            </div>
+          </li>
+          <li class="cart__item">
+            <span class="item__name">Укулеле Kala KA-15S</span>
+            <div class="item__info">
+              <span class="item__quantity">
+                <button onclick="changeQuantity('item2', -1)">-</button>
+                <span id="item2-quantity">1</span>
+                <button onclick="changeQuantity('item2', 1)">+</button>
+              </span>
+              <span class="item__price">3990 руб.</span>
+            </div>
+          </li>
+        </ul>
+        <div class="cart__total">
+          Итого: <span id="total-price">8980 руб.</span>
+        </div>
+      </div>
+    </main>
+    <script>
+      const prices = { item1: 4990, item2: 3990 };
+      function changeQuantity(item, change) {
+        const quantityEl = document.getElementById(`${item}-quantity`);
+        let quantity = parseInt(quantityEl.innerText);
+        quantity = Math.max(1, quantity + change);
+        quantityEl.innerText = quantity;
+        updateTotal();
+      }
+      function updateTotal() {
+        let total = 0;
+        for (const item in prices) {
+          const quantity = parseInt(
+            document.getElementById(`${item}-quantity`).innerText
+          );
+          total += prices[item] * quantity;
+        }
+        document.getElementById("total-price").innerText = `${total} руб.`;
+      }
+    </script>
+
+    <footer class="footer">
+      <div class="footer__container footer__content">
+        <nav class="footer__nav">
+          <a class="footer__link" href="index.html">Главная</a>
+          <a class="footer__link" href="about.html">О нас</a>
+          <a class="footer__link" href="blog.html">Блог</a>
+          <a class="footer__link" href="shop.html">Товары</a>
+        </nav>
+
+        <p class="footer__copyright">&copy; 2024 Айат Кыныев</p>
+      </div>
+    </footer>
+  </body>
+</html>
